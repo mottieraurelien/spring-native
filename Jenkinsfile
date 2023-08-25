@@ -14,6 +14,18 @@ pipeline {
             }
         }
 
+        stage("Build binary"){
+            steps {
+                echo 'To be implemented...'
+            }
+        }
+
+        stage("Compress binary"){
+            steps {
+                echo 'To be implemented...'
+            }
+        }
+
         stage("Docker Build"){
             steps {
                 echo 'To be implemented...'
