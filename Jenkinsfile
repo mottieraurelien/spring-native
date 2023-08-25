@@ -1,14 +1,16 @@
 pipeline {
 
     agent {
-        docker { image 'maven:3-eclipse-temurin-17-alpine' }
+        docker {
+            image 'maven:3-eclipse-temurin-17-alpine'
+        }
     }
 
     stages {
 
         stage("Maven Build"){
             steps {
-                echo 'To be implemented...'
+                sh 'mvn clean install'
             }
         }
 
