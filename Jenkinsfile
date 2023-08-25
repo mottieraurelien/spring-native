@@ -1,16 +1,14 @@
 pipeline {
 
-    agent any
-
-    tools {
-        maven 'maven 3.9.4'
+    agent {
+        docker { image 'maven:3-eclipse-temurin-17-alpine' }
     }
 
     stages {
 
         stage("Maven Build"){
             steps {
-                sh 'mvn clean install'
+                echo 'To be implemented...'
             }
         }
 
