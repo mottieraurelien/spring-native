@@ -16,7 +16,7 @@ pipeline {
 
         stage("Build binary"){
             steps {
-                sh 'native:compile-no-fork'
+                sh 'mvn native:compile-no-fork -P native'
             }
         }
 
