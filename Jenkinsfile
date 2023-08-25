@@ -16,7 +16,7 @@ pipeline {
 
         stage("Build binary"){
             steps {
-                echo 'To be implemented...'
+                sh 'native:compile-no-fork'
             }
         }
 
