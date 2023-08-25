@@ -4,11 +4,8 @@ pipeline {
 
     stages {
 
-        def repository = "spring-native"
-
         stage("Git Clone"){
             steps {
-                sh 'printenv'
                 echo 'To be implemented...'
             }
         }
