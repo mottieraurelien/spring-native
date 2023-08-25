@@ -2,20 +2,15 @@ pipeline {
 
     agent any
 
-    stages {
+    tools {
+        maven 'Maven 3.9.4'
+    }
 
-        stage("Git Clone"){
-            steps {
-                sh 'pwd'
-                sh 'ls -lha'
-                sh 'ls -lha ~'
-                sh 'printenv'
-            }
-        }
+    stages {
 
         stage("Maven Build"){
             steps {
-                echo 'To be implemented...'
+                sh 'mvn clean install'
             }
         }
 
