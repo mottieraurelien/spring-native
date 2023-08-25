@@ -6,7 +6,10 @@ pipeline {
 
         stage("Git Clone"){
             steps {
-                echo 'To be implemented...'
+                sh 'pwd'
+                sh 'ls -lha'
+                sh 'ls -lha ~'
+                sh 'printenv'
             }
         }
 
