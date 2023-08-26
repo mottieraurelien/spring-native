@@ -2,7 +2,7 @@ pipeline {
 
     agent {
         docker {
-            image 'maven:3-eclipse-temurin-17-alpine'
+            image "${AGENT_BASE_IMAGE}"
         }
     }
 
